@@ -1,0 +1,26 @@
+body {
+  background-color: cornflowerblue
+ }
+.no-articles {
+  width: 100%;
+  height: 50vh;
+  background-image:  url('../img/noscrapenews.jpg');
+}
+.section-article{
+  height: 50%;
+}
+  
+.mid-section{
+  width: 100%;
+  height: 25vh;
+  background-image:  url('../img/NewScraper.jpg');
+}
+.article{
+  float: left;
+  min-height: 60vh;
+}
+.img-article{
+  max-width: 40vh;
+  max-height: 40vh;
+  float: right;
+}

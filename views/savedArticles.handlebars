@@ -1,0 +1,26 @@
+<div class="section-article">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="saved-articles">Saved Articles</h1>
+        </div>
+    </div>
+    {{#each articles}}
+    <div class="card card-body article-delete" id="{{_id}}">
+        <div class=" row">
+            <div class="col-10">
+                <h4>{{title}}</h4>
+            </div>
+            <div class="col-2"> <button type="submit" class="btn btn-link delete" data-link="{{link}}"
+                    data-title="{{title}}" data-text="{{text}}" card-parent="{{_id}}">Delete</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-justify">
+            <div class="col-12"> <a href="{{link}}"> {{text}}</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
